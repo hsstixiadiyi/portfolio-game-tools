@@ -8,7 +8,7 @@
 - 方向：工具与管线开发、脚本自动化、前端交互
 - 一句话定位：用代码把美术生产环节自动化、流程化，做提效工具与可复用管线
 - 邮箱：[填写邮箱]
-- GitHub：[填写 GitHub 主页链接]
+- GitHub：https://github.com/hsstixiadiyi
 - 在线作品集：[可选，填写链接]
 
 ## 技能概览
@@ -37,7 +37,7 @@
 
 ## 其他经历
 
-- 课程项目：[填写]
+- 课程项目：**AI 互动游戏原型《雨夜电台》** —— 验证大模型在文字向游戏中的角色对话与剧情分支交互；设计并迭代 3 版角色设定 / 剧情分支 Prompt，按一致性、连贯性、可控性做对照测试，沉淀优化思路并输出可落地玩法方案（详见 [项目 04](projects/04-ai-interactive-game-prototype/README.md)）
 - 实践 / 兼职：[填写，如交付类、PPT 类项目]
 - 证书：普通话二甲、英语四级 [按实际填写]
 
@@ -49,7 +49,8 @@ portfolio-game-tools/
 ├── projects/
 │   ├── 01-dcc-automation-script/    # DCC 批量脚本 / 插件
 │   ├── 02-node-workflow-canvas/      # 节点式工作流画布
-│   └── 03-agent-workflow-demo/       # Agent 工作流 Demo
+│   ├── 03-agent-workflow-demo/       # Agent 工作流 Demo
+│   └── 04-ai-interactive-game-prototype/  # AI 互动游戏原型
 ├── skills/skills.md                 # 技能清单与熟练度
 ├── docs/notes.md                     # 项目笔记：需求拆解与踩坑记录
 └── assets/                           # 头像、素材、简历 PDF
