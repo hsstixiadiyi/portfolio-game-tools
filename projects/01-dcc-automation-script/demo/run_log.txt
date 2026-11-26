@@ -1,0 +1,6 @@
+21:03:06 [ERROR] FAIL broken_texture.png : cannot identify image file 'examples\\input\\broken_texture.png'
+21:03:06 [INFO] OK   ground_gradient.jpg -> tex_002.png (512, 512)
+21:03:06 [INFO] OK   sky_gradient.png -> tex_003.png (512, 256)
+21:03:06 [INFO] OK   ui_panel.webp -> tex_004.png (512, 256)
+21:03:06 [INFO] 完成：总计 4 张，成功 3 张，失败 1 张
+21:03:06 [INFO] 报告已写入：demo\report.json

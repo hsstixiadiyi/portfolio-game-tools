@@ -1,0 +1,306 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+  color: #1f2933;
+  background: #f4f6f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #6b7785;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button,
+.file-button {
+  font: inherit;
+  font-size: 13px;
+  padding: 7px 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #263445;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled),
+.file-button:hover {
+  background: #eef3f8;
+}
+
+button.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+button.primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.danger {
+  border-color: #e3a6a6;
+  color: #a33434;
+  width: 100%;
+}
+
+.file-button input {
+  display: none;
+}
+
+.workspace {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.canvas {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background-color: #fafbfc;
+  background-image: radial-gradient(#d8dee6 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.edge-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.edge {
+  fill: none;
+  stroke: #7d8da1;
+  stroke-width: 2;
+}
+
+.edge.pending {
+  stroke: #2563eb;
+  stroke-dasharray: 5 4;
+}
+
+.edge-dot {
+  fill: #7d8da1;
+}
+
+.node {
+  position: absolute;
+  height: 96px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(31, 41, 51, 0.08);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.node.selected {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.18);
+}
+
+.node.running {
+  border-color: #d99b28;
+}
+
+.node.done {
+  border-color: #3a9d63;
+}
+
+.node.error {
+  border-color: #c94c4c;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border-bottom: 1px solid #edf1f5;
+  font-size: 12px;
+}
+
+.node-kind {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #eef3f8;
+  color: #526274;
+  font-size: 11px;
+}
+
+.node.input .node-kind {
+  background: #e6f0ff;
+  color: #1d4ed8;
+}
+
+.node.process .node-kind {
+  background: #fff2dd;
+  color: #9a6200;
+}
+
+.node.output .node-kind {
+  background: #e5f5ec;
+  color: #1f7a4d;
+}
+
+.node-header strong {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status {
+  font-size: 10px;
+  color: #7b8794;
+}
+
+.status-running {
+  color: #b8760c;
+}
+
+.status-done {
+  color: #268055;
+}
+
+.status-error {
+  color: #c0392b;
+}
+
+.node-body {
+  padding: 10px 8px;
+  font-size: 12px;
+  color: #4a5866;
+}
+
+.preview {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.port {
+  position: absolute;
+  top: 44px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #64748b;
+  cursor: crosshair;
+}
+
+.port-in {
+  left: -6px;
+}
+
+.port-out {
+  right: -6px;
+}
+
+.panel {
+  width: 280px;
+  padding: 16px;
+  background: #ffffff;
+  border-left: 1px solid #e3e8ee;
+  overflow-y: auto;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 15px;
+}
+
+.panel label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #526274;
+}
+
+.panel input,
+.panel select,
+.panel textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px 8px;
+  font: inherit;
+  font-size: 13px;
+  color: #1f2933;
+  border: 1px solid #d5dde6;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.hint {
+  font-size: 13px;
+  color: #8593a2;
+}
+
+.status-box {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f6f8fa;
+  border-radius: 6px;
+}
+
+.status-box h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.status-box p {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #526274;
+  line-height: 1.5;
+}
+
+.final-output code {
+  display: inline-block;
+  padding: 2px 5px;
+  background: #e8eef5;
+  border-radius: 4px;
+  color: #1d4ed8;
+  word-break: break-all;
+}

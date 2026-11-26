@@ -23,7 +23,6 @@
 - 大模型对话与 Prompt 工程：角色设定、剧情分支类提示词设计与三轮迭代
 - 测试与记录：跨版本对照测试、问题归类、文档化沉淀
 - 玩法设计：分支路线划分、倾向值积累、结局收敛
-- [补充：若接入过模型 API 或用过原型搭建工具，在此填写]
 
 ## 实现要点
 
@@ -47,7 +46,8 @@
 - 剧情分支模板（含示例场景与输出对照）：[prompts/story-branch.md](prompts/story-branch.md)
 - 模型测试记录与优化思路：[docs/model-test-log.md](docs/model-test-log.md)
 - 玩法方案与优先级：[docs/gameplay-proposal.md](docs/gameplay-proposal.md)
-- 演示对话样例：[demo/sample-dialogue.md](demo/sample-dialogue.md)（真实投递时可替换为模型实跑截图）
+- 演示对话样例：[demo/sample-dialogue.md](demo/sample-dialogue.md)
+- 对话演示图：[demo/dialogue-screenshot.png](demo/dialogue-screenshot.png)（由示例对话渲染，非模型实跑截图）
 
 ## 遇到的问题与解决
 

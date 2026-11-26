@@ -1,0 +1,7 @@
+[21:08:08] 收到需求：读取 examples/input.txt，统计词频，写入 demo/word_count.txt
+[21:08:08] 拆解结果：3 步 -> read_file -> count_words -> write_file
+[21:08:08] 步骤 1 read_file [成功] 读取文件：examples/input.txt
+[21:08:08] 步骤 2 count_words [成功] 统计上一步文本的词频
+[21:08:08] 步骤 3 write_file [成功] 写入文件：demo/word_count.txt
+[21:08:08] 工作流完成，最终输出：
+demo\word_count.txt

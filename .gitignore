@@ -7,9 +7,9 @@ desktop.ini
 .vscode/
 .idea/
 
-# 依赖与构建（后续代码项目用到时取消注释）
-# node_modules/
-# __pycache__/
-# *.pyc
-# dist/
-# build/
+# 依赖与构建
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
