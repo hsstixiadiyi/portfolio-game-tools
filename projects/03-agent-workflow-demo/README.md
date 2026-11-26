@@ -40,7 +40,7 @@ python src/agent.py \
 - 运行日志：[demo/run_log.txt](demo/run_log.txt)，逐步记录拆解结果与每步状态。
 - 运行截图：[demo/run-screenshot.png](demo/run-screenshot.png)（由上述真实日志渲染）。
 - 示例：输入「读取 examples/input.txt，统计词频，写入 demo/word_count.txt」→ 拆解为 `read_file → count_words → write_file` 三步 → 三步均成功 → 结果文件见 [demo/word_count.txt](demo/word_count.txt)。
-- 界面截图：本项目为命令行 Demo，无需截图；待补素材清单见 [docs/待补清单.md](../../docs/待补清单.md)。
+- 界面截图：本项目为命令行 Demo，无需界面截图；运行结果见上方日志与截图。
 
 ## 遇到的问题与解决
 

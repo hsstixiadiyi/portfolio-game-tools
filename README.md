@@ -52,6 +52,5 @@ portfolio-game-tools/
 │   └── 04-ai-interactive-game-prototype/  # AI 互动游戏原型
 ├── skills/skills.md                 # 技能清单与熟练度
 ├── docs/notes.md                     # 项目笔记：需求拆解与踩坑记录
-├── docs/待补清单.md                  # 投递前需补充的素材清单
 └── assets/                           # 头像、素材、简历 PDF
 ```
